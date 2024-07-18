@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.InforRideActivity">
+
+    <Button
+        android:id="@+id/btnRoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="464dp"
+        android:layout_marginEnd="16dp"
+        android:text="Xem đường đi "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_IdRide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="184dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="ID của chuyến đi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_Pickup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Vị trí đón"
+        app:layout_constraintTop_toBottomOf="@+id/edt_IdRide"
+        tools:layout_editor_absoluteX="18dp" />
+
+    <EditText
+        android:id="@+id/edt_Dropoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Vị trí trả khách"
+        app:layout_constraintTop_toBottomOf="@+id/edt_Pickup"
+        tools:layout_editor_absoluteX="18dp" />
+
+    <EditText
+        android:id="@+id/edt_phoneUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Số điện thoại khách hàng"
+        app:layout_constraintTop_toBottomOf="@+id/edt_Dropoff"
+        tools:layout_editor_absoluteX="18dp" />
+
+    <EditText
+        android:id="@+id/edt_nameUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Tên khách hàng"
+        app:layout_constraintTop_toBottomOf="@+id/edt_phoneUser"
+        tools:layout_editor_absoluteX="18dp" />
+
+    <EditText
+        android:id="@+id/edt_fare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Số tiền phải trả"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nameUser"
+        tools:layout_editor_absoluteX="18dp" />
+
+    <EditText
+        android:id="@+id/edt_created"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Thời gian tạo chuyến đi"
+        app:layout_constraintTop_toBottomOf="@+id/edt_fare"
+        tools:layout_editor_absoluteX="18dp" />
+
+    <EditText
+        android:id="@+id/edt_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="status"
+        app:layout_constraintTop_toBottomOf="@+id/edt_created"
+        tools:layout_editor_absoluteX="18dp" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiếp tục"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="261dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bar.Ride_Activity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraintTitleChiTietBillID"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/titleChiTietDonHang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chi tiết đơn hàng"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<ScrollView
+android:id="@+id/scrollViewChiTietBillID"
+android:layout_width="match_parent"
+android:layout_height="0dp"
+app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.0"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/constraintTitleChiTietBillID"
+app:layout_constraintVertical_bias="1.0">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/titleIdChuyenDi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="ID chuyến đi"
+        android:textColor="#6E6E6E"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtIdChuyenDi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="1111862732"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/titleViTriDon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="Vị trí đón"
+        android:textColor="#6E6E6E"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtViTriDon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="Cộng Hòa, Q.Tân Bình"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/titleViTriTraKhach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="Vị trí trả khách"
+        android:textColor="#6E6E6E"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtViTriTraKhach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="Lý Thường Kiệt, Q.Phú Nhuận"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/titleSoDienThoaiKhach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="Số điện thoại khách hàng"
+        android:textColor="#6E6E6E"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtSoDienThoaiKhach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="0377779999"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/titleTenKhachHang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="Tên khách hàng"
+        android:textColor="#6E6E6E"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtTenKhachHang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="Nguyễn Văn A"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/titleSoTienPhaiTra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="Số tiền phải trả"
+        android:textColor="#6E6E6E"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtSoTienPhaiTra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="50.000 VNĐ"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/titleThoiGianTaoChuyen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="Thời gian tạo chuyến đi"
+        android:textColor="#6E6E6E"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtThoiGianTaoChuyen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="8/7/2024 10:28"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/titleTrangThai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="Trạng thái"
+        android:textColor="#4E4E4E"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtTrangThai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="Đang chờ"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</LinearLayout>
+</ScrollView>
+
+<LinearLayout
+android:id="@+id/linearLayout2"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:gravity="bottom"
+android:orientation="horizontal"
+android:padding="10dp"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.0"
+app:layout_constraintStart_toStartOf="parent">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:backgroundTint="#000000"
+        android:text="Quay lại"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

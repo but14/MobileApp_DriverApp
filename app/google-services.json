@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "839300341159",
+    "project_id": "dbwolfer",
+    "storage_bucket": "dbwolfer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839300341159:android:fa4a1c96348828ad9caa82",
+        "android_client_info": {
+          "package_name": "com.example.appdriver"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuPoTTjZClgmZsqF6Wtd07yfnBcHpnL8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839300341159:android:fdb51f40f63af08d9caa82",
+        "android_client_info": {
+          "package_name": "com.example.userapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuPoTTjZClgmZsqF6Wtd07yfnBcHpnL8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
